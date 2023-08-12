@@ -152,7 +152,7 @@ def user_stats(df, city):
         earliest_year_of_birth = int(df['Birth Year'].min())
         mr_year_of_birth = int(df['Birth Year'].max())
         mc_year_of_birth = int(df['Birth Year'].value_counts().idxmax())
-        print("The earliest year of birth is:",ea_year_of_birth,'\n'"The most recent year of birth is:",mr_year_of_birth,'\n'"The most common year of birth is:",mc_year_of_birth)
+        print("The earliest year of birth is:",earliest_year_of_birth,'\n'"The most recent year of birth is:",mr_year_of_birth,'\n'"The most common year of birth is:",mc_year_of_birth)
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
